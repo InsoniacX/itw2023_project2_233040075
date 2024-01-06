@@ -88,8 +88,10 @@ header .fa-bars{
 }
 .home .home-slid .box{
     position: relative;
-    width: 100%;
 }
+.home .home-slid .box .image {
+    width: 100%;
+} 
 .home .home-slid .box::before{
     content: "";
     background: rgba(0, 0, 0, 0.5);
