@@ -6,7 +6,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all 0.2s linear;
     font-family: 'Playfair Display', serif;
 }
@@ -18,6 +17,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 0.5rem;
+    background: #eee;
     font-size: 66%;
 }
 .btn{
@@ -267,6 +267,7 @@ header .fa-bars{
 .team .team-slider .box .content p{
     color: #fff;
     font-size: 2.2rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 .blog .row{
     display: grid;
@@ -313,6 +314,7 @@ header .fa-bars{
     font-size: 2rem;
     color: var(--th-color);
     margin: 1rem 0;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 .contact .row{
     display: flex;
@@ -416,8 +418,16 @@ header .fa-bars{
 
 /* media query  */
 
-@media(max-width:850px){
+@media screen and (min-width:1024px){
 
+    
+    .home .image {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:1023px){
     header .fa-bars{
         display: block;
     }
@@ -441,19 +451,32 @@ header .fa-bars{
     header .navbar a:hover{
         background: var(--min-color);
     }
+    .home .image {
+        display: flex;
+        justify-content: center;
+    }
     .about .box{
         flex-wrap: wrap;
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .about .box .image img{
-        width: 90%;
+        width: 100%;
     }
     .services .row{
     
         grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
     }
+    .portfolio .row{
+        
+        grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+    }
     .blog .row{
         grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
+    }
+    .contact .box {
+        grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
     }
     .contact .row{
         flex-flow: column;
@@ -463,12 +486,6 @@ header .fa-bars{
     }
     .footer{
 
-        grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
-    }
-}
-@media(max-width:550px){
-    .portfolio .row{
-        
-        grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(50%,2fr));
     }
 }
