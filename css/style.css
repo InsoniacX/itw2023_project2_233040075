@@ -269,26 +269,6 @@ header .fa-bars{
     font-size: 2.2rem;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
-.blog .row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
-    gap: 2rem;
-    margin: 6rem 0;
-}
-.blog .row img{
-    width: 100%;
-    object-fit: cover;
-}
-.blog .row h3{
-    color: var(--th-color);
-    font-size: 3rem;
-    margin: 1.5rem 0;
-}
-.blog .row p{
-    color: var(--th-color);
-    font-size: 1.9rem;
-    margin: 1rem 0;
-}
 .welcam{
     padding: 7rem 0;
     text-align: center;
